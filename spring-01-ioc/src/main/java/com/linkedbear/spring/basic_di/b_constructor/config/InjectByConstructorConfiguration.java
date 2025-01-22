@@ -10,6 +10,7 @@ public class InjectByConstructorConfiguration {
     
     @Bean
     public Person person() {
+        // 调用构造方法进行注入
         return new Person("test-person-anno-byconstructor", 18);
     }
     

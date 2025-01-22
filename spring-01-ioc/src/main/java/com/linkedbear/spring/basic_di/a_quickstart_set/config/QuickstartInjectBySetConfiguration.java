@@ -11,6 +11,7 @@ public class QuickstartInjectBySetConfiguration {
     @Bean
     public Person person() {
         Person person = new Person();
+        // 基于注解方式的属性注入
         person.setName("test-person-anno-byset");
         person.setAge(18);
         return person;

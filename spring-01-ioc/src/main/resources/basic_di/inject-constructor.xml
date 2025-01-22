@@ -5,6 +5,7 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="person" class="com.linkedbear.spring.basic_di.b_constructor.bean.Person">
+        <!--原来这个就是xml的构造器注入写法-->
         <constructor-arg index="0" value="test-person-byconstructor"/>
         <constructor-arg index="1" value="18"/>
     </bean>

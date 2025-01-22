@@ -4,7 +4,8 @@ public class Person {
     
     private String name;
     private Integer age;
-    
+
+    // 对外开放一个构造方法
     public Person(String name, Integer age) {
         this.name = name;
         this.age = age;

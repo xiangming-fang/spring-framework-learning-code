@@ -14,7 +14,8 @@ public class ImportXmlAnnoApplication {
         Stream.of(ctx.getBeanDefinitionNames()).forEach(System.out::println);
     
         System.out.println("----------------------");
-        
+
+        // 注解的bean导入xml的bean
         ApplicationContext ctx2 = new AnnotationConfigApplicationContext(ImportXmlAnnotationConfiguration.class);
         Stream.of(ctx2.getBeanDefinitionNames()).forEach(System.out::println);
     }
