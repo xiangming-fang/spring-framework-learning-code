@@ -16,6 +16,7 @@ public class PrototypeLifecycleAnnoApplication {
         System.out.println("已经取到了Pen。。。");
         System.out.println();
         System.out.println("用完Pen了，准备销毁。。。");
+        // 单独销毁这个pen啊，牛逼
         ctx.getBeanFactory().destroyBean(pen);
         System.out.println("Pen销毁完成。。。");
         ctx.close();

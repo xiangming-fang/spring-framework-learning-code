@@ -18,7 +18,8 @@ public class BeanTypeAnnoApplication {
         toys.forEach((name, toy) -> {
             System.out.println("toy name : " + name + ", " + toy.toString());
         });
-        
+
+        // factorybean 是延时生产的，在去获取的时候才会真正的创建这个对象
         Toy toy1 = ctx.getBean(Toy.class);
         Toy toy2 = ctx.getBean(Toy.class);
         System.out.println(toy1 == toy2);

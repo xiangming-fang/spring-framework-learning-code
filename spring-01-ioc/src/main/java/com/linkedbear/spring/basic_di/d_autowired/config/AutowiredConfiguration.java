@@ -14,8 +14,10 @@ import org.springframework.context.annotation.Primary;
 public class AutowiredConfiguration {
 
     @Bean
-    @Autowired
-    public Cat cat(Person person) {
+    // 这里的 @Autowired 注解是多余的
+    // 在spring执行这个方法的时候,会自动从ioc里查找，并注入一个person实例
+//    @Autowired
+    public Cat cat(/*@Qualifier("master") */Person person) {
         Cat cat = new Cat();
         cat.setName("mimi");
         cat.setPerson(person);

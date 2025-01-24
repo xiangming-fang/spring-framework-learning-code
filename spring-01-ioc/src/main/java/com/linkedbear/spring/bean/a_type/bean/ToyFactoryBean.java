@@ -30,4 +30,10 @@ public class ToyFactoryBean implements FactoryBean<Toy> {
     public void setChild(Child child) {
         this.child = child;
     }
+
+    @Override
+    public boolean isSingleton() {
+        // 这里如果设置成false，那么在从ioc里进行依赖查找的时候，查找几次就会创建几次这个bean
+        return true;
+    }
 }

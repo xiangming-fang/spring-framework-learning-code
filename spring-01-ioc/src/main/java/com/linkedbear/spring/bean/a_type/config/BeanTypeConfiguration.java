@@ -14,7 +14,8 @@ public class BeanTypeConfiguration {
     public Child child() {
         return new Child();
     }
-    
+
+    // 这里会报错,因为toyFactory()中已有
 //    @Bean
 //    public Toy ball() {
 //        return new Ball("ball");
