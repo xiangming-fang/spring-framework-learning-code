@@ -9,6 +9,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class QuickstartInjectBySetAnnoApplication {
     
     public static void main(String[] args) throws Exception {
+        // annotationConfigApplicationContext
         BeanFactory beanFactory = new AnnotationConfigApplicationContext(QuickstartInjectBySetConfiguration.class);
         Person person = (Person) beanFactory.getBean("person");
         System.out.println(person);
