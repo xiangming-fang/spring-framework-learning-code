@@ -10,6 +10,13 @@ import javax.sql.DataSource;
 public class DataSourceConfiguration {
 
     @Bean
+    @Profile("city")
+    public DataSource cityDataSource() {
+        System.out.println("激活city相关数据源");
+        return null;
+    }
+
+    @Bean
     @Profile("dev")
     public DataSource devDataSource() {
         return null;
